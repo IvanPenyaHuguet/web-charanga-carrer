@@ -1,10 +1,12 @@
 import ImageBanner from "../components/home/ImageBanner";
+import Form from "../components/form/contactForm";
 
-function Home() {
+function contact() {
   return (
     <>
       <ImageBanner />
+      <Form />
     </>
   );
 }
-export default Home;
+export default contact;

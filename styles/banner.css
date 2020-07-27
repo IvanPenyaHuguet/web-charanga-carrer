@@ -1,0 +1,7 @@
+.banner-image {
+    background-image: url('/img/fondoBanner.jpg');
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    margin: auto;
+}
