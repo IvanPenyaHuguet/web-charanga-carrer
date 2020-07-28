@@ -7,6 +7,7 @@ import LogoCorreo from "./../icons/correo";
 import InputText from "./inputText";
 import user_id from "./../../personal_info";
 import validateForm from "../../lib/validateForm";
+import createAlert from "./../layouts/alert";
 
 const loader = (isSubmitting) => {
   if (isSubmitting == true) {
@@ -18,6 +19,11 @@ const form = () => {
   const [submitted, setSubmitted] = useState(false);
   const router = useRouter();
   if (submitted) {
+    createAlert({
+      title: "Gracias por contactar!",
+      data: ["En breve nos pondremos en contacto"],
+      type: "success",
+    });
     router.push("/");
   }
   return (
@@ -32,7 +38,7 @@ const form = () => {
         validate={(values) => {
           return validateForm(values);
         }}
-        onSubmit={(values, { setFieldError }) => {
+        onSubmit={(values) => {
           const template_params = {
             from_name: values.name,
             message_html: values.message,
@@ -46,13 +52,17 @@ const form = () => {
             .then(() => {
               setSubmitted(true);
             })
-            .catch(() => {
-              setFieldError("phone", "Este número no es válido");
-            });
+            .catch(() =>
+              createAlert({
+                title: "¡Ha habido un error!",
+                data: ["Lo sentimos, inténtelo más tarde."],
+                type: "error",
+              })
+            );
         }}
       >
         {({ errors, handleChange, isSubmitting }) => (
-          <Form className="flex justify-center shadow-md rounded-lg mx-auto px-8 py-4 border-opacity-100 border-logo3 border-2 w-full lg:w-3/5 text-logo3">
+          <Form className="flex justify-center shadow-md rounded-lg mx-auto px-8 py-4 border-opacity-100 border-logo3 border-2 w-full lg:w-3/5 text-logo3 fadeInLeft">
             <div className="flex justify-around flex-col align-center content-center">
               <h2 className="text-center text-2xl">Contáctanos!</h2>
               <InputText

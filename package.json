@@ -17,6 +17,9 @@
     "react": "16.13.1",
     "react-burger-menu": "^2.7.0",
     "react-dom": "16.13.1",
+    "react-image-gallery": "^1.0.8",
+    "react-slick": "^0.27.1",
+    "slick-carousel": "^1.8.1",
     "validator": "^13.1.1"
   },
   "devDependencies": {

@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
 @import './main.css';
 @import './burger.css';
 @import './banner.css';
 @import './button.css';
 @import './loader.css';
+@import './alert.css';
+@import './carousel.css';
