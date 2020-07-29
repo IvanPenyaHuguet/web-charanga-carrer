@@ -70,7 +70,7 @@ const form = () => {
                 label="Nombre"
                 onChange={handleChange}
                 placeholder="Nombre"
-                error={errors.name ? " error-input" : ""}
+                error={errors.name ? "error-input" : ""}
               />
               <ErrorMessage className="" name="name" component="small" />
               <InputText
@@ -111,6 +111,7 @@ const form = () => {
                 </i>
                 <span>Envía</span>
               </button>
+              <span className="">* Estos campos son obligatorios.</span>
             </div>
           </Form>
         )}
