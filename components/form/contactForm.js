@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { Formik, Form, ErrorMessage } from "formik";
+import { Formik, Form, ErrorMessage, Field } from "formik";
 import { useRouter } from "next/router";
 import Container from "../layouts/container";
 import LogoCorreo from "./../icons/correo";
@@ -34,6 +34,7 @@ const form = () => {
           phone: "",
           email: "",
           message: "",
+          terms: false,
         }}
         validate={(values) => {
           return validateForm(values);
@@ -99,7 +100,13 @@ const form = () => {
                 error={errors.message ? "error-input" : ""}
               />
               <ErrorMessage name="message" component="small" />
-
+              <div className="space-x-2">
+                <Field type="checkbox" name="terms" id="terms" />
+                <label htmlFor="terms">
+                  He leído y aceptado las condiciones de privacidad.
+                </label>
+              </div>
+              <ErrorMessage name="terms" component="small" />
               <button
                 className="button-new button--itzel mx-auto"
                 type="submit"
