@@ -4,7 +4,7 @@ import Container from "./../layouts/container";
 
 const footerMobile = () => {
   return (
-    <Container className="flex bg-logo1 justify-around self-center content-center items-center text-logo1d">
+    <Container className="flex bg-logo1 justify-around self-center content-center items-center text-logo1d z-footer">
       {getLinks()}
     </Container>
   );

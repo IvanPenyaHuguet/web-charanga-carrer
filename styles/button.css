@@ -12,8 +12,7 @@
     background: none;
     color: inherit;
     vertical-align: middle;
-    position: relative;
-    z-index: 1;
+    position: relative;    
     -webkit-backface-visibility: hidden;
     -webkit-appearance: button;
     cursor: pointer;

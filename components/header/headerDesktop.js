@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import Nav from "./navDesktop";
 import Container from "../layouts/container";
 import Logo from "../icons/iconDesktop";

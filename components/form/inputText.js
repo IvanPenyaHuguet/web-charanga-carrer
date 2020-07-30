@@ -1,4 +1,11 @@
-const inputText = ({ label, name, onChange, placeholder, error = "" }) => {
+const inputText = ({
+  label,
+  name,
+  onChange,
+  placeholder,
+  error = "",
+  height = "",
+}) => {
   return (
     <div className="flex flex-wrap justify-bewtween content-center flex-row lg:space-x-8 space-x-2">
       <label htmlFor={name} className="">
@@ -8,7 +15,7 @@ const inputText = ({ label, name, onChange, placeholder, error = "" }) => {
         name={name}
         id={name}
         type="text"
-        className={`border-solid border-logo3 border-2 rounded-lg border-opacity-50 w-full focus:border-4 focus:border-opacity-100 focus:shadow-outline ${error}`}
+        className={`border-solid border-logo3 border-2 rounded-lg border-opacity-50 w-full focus:border-4 focus:border-opacity-100 focus:shadow-outline ${error} ${height}`}
         onChange={onChange}
         placeholder={placeholder}
       />

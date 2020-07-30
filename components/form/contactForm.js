@@ -15,7 +15,7 @@ const loader = (isSubmitting) => {
   }
 };
 
-const form = () => {
+const form = ({ onShowPrivacy }) => {
   const [submitted, setSubmitted] = useState(false);
   const router = useRouter();
   if (submitted) {
@@ -85,25 +85,38 @@ const form = () => {
               <InputText
                 name="email"
                 label="Correo electrónico"
-                type="text"
                 onChange={handleChange}
                 placeholder="E-Mail"
                 error={errors.email ? "error-input" : ""}
               />
               <ErrorMessage name="email" component="small" />
-              <InputText
-                name="message"
-                label="Escribe tu mensaje"
-                type="text"
-                onChange={handleChange}
-                placeholder="Pregúntanos..."
-                error={errors.message ? "error-input" : ""}
-              />
+              <div className="flex flex-wrap justify-bewtween content-center flex-row lg:space-x-8 space-x-2">
+                <label htmlFor="message" className="">
+                  Escribe tu mensaje:
+                </label>
+                <Field
+                  component="textarea"
+                  name="message"
+                  id="message"
+                  rows="2"
+                  placeholder="Pregúntanos..."
+                  className={`border-solid resize-none border-logo3 border-2 rounded-lg border-opacity-50 w-full focus:border-4 focus:border-opacity-100 focus:shadow-outline h-32 ${
+                    errors.message ? "error-input" : ""
+                  }`}
+                />
+              </div>
               <ErrorMessage name="message" component="small" />
               <div className="space-x-2">
                 <Field type="checkbox" name="terms" id="terms" />
                 <label htmlFor="terms">
-                  He leído y aceptado las condiciones de privacidad.
+                  He leído y aceptado las{" "}
+                  <div
+                    className="italic underline text-advise cursor-pointer inline"
+                    onClick={() => onShowPrivacy()}
+                  >
+                    condiciones de privacidad
+                  </div>
+                  .
                 </label>
               </div>
               <ErrorMessage name="terms" component="small" />
@@ -127,3 +140,16 @@ const form = () => {
   );
 };
 export default form;
+/*
+                <input
+                  name="message"
+                  id="message"
+                  type="textarea"
+                  rows="20"
+                  cols="50"
+                  className={`border-solid border-logo3 border-2 rounded-lg border-opacity-50 w-full focus:border-4 focus:border-opacity-100 focus:shadow-outline h-32 ${
+                    errors.message ? "error-input" : ""
+                  }`}
+                  onChange={handleChange}
+                  placeholder="Pregúntanos..."
+                />*/

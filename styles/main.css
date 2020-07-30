@@ -25,3 +25,6 @@ html {
   animation-name: fadeInLeft;
   animation-duration: 0.8s;
 }
+.z-footer {
+  z-index: 100;
+}

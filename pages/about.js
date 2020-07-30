@@ -21,7 +21,6 @@ const about = () => {
         <i className="button__icon icon-new fill-current"></i>
         <span>Envía</span>
       </button>
-      <br />
     </>
   );
 };

@@ -9,6 +9,7 @@
     left: initial;
     top: 1rem;
     right: 2rem;
+    z-index: 20;
   }
   
   /* Color/shape of burger icon bars */

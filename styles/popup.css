@@ -1,0 +1,47 @@
+.popup {  
+    position: fixed;  
+    width: 100%;  
+    height: 100%;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    margin: auto;  
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 2000;  
+  }  
+.popup_inner_lg {  
+    position: absolute;  
+    left: 25%;  
+    right: 25%;  
+    top: 15%;  
+    bottom: 15%;  
+    @apply mx-auto;  
+    @apply rounded-lg; 
+    background: white;
+    overflow-y: auto;
+    overflow-x: visible;    
+}
+.popup_inner_sm {  
+    position: absolute;  
+    left: 10%;  
+    right: 10%;  
+    top: 10%;  
+    bottom: 10%;  
+    @apply mx-auto;  
+    @apply rounded-lg; 
+    background: white;
+    overflow-y: auto;
+}
+.popup_inner_xs {  
+    position: absolute;  
+    left: 2%;  
+    right: 2%;  
+    top: 2%;  
+    bottom: 2%;  
+    @apply mx-auto;  
+    @apply rounded-lg; 
+    background: white;
+    overflow-y: auto;
+}
+

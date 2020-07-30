@@ -24,7 +24,13 @@ const questions = [
   },
 ];
 const items = questions.map((question) => {
-  return <AccordionItem title={question.title} message={question.message} />;
+  return (
+    <AccordionItem
+      title={question.title}
+      message={question.message}
+      key={question.title}
+    />
+  );
 });
 
 const accordion = () => {
