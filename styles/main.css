@@ -28,3 +28,6 @@ html {
 .z-footer {
   z-index: 100;
 }
+.mini-w-8 {
+  min-width: 8rem;
+}

@@ -5,22 +5,22 @@ const questions = [
   {
     title: "¿Dónde podeis actuar?",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan non nibh sed maximus. Etiam venenatis lacus eget sapien mollis vulputate. Maecenas auctor at massa eget tristique. Praesent venenatis a odio a hendrerit. Phasellus in imperdiet dui. Sed ut ultrices justo, iaculis commodo lacus. Mauris tempor suscipit elit et volutpat. Etiam eu erat auctor, tristique tellus et, elementum nisi. Vivamus faucibus dolor ut sagittis mattis. Curabitur vel mattis magna, in blandit lectus. Vivamus quis auctor metus. Suspendisse vel egestas libero. ",
+      "Actualmente estamos disponibles para actuar debido a nuestra localización en la provincia de Valencia, Castellón y Teruel. ¡Pero no dudes en ponerte en contacto con nosotros si tienes dudas si podemos tocar en tu fiesta!",
   },
   {
     title: "¿Cuántos músicos sois?",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan non nibh sed maximus. Etiam venenatis lacus eget sapien mollis vulputate. Maecenas auctor at massa eget tristique. Praesent venenatis a odio a hendrerit. Phasellus in imperdiet dui. Sed ut ultrices justo, iaculis commodo lacus. Mauris tempor suscipit elit et volutpat. Etiam eu erat auctor, tristique tellus et, elementum nisi. Vivamus faucibus dolor ut sagittis mattis. Curabitur vel mattis magna, in blandit lectus. Vivamus quis auctor metus. Suspendisse vel egestas libero. ",
+      "Actualmente estamos compuestos por siete músicos de forma fija, debido a nuestra composición nos permite realizar cualquier acto de charanga a un precio competitivo. Sin embargo, si tu acto lo necesita podemos aumentar la plantilla ya que tenemos relación con grandes músicos.",
   },
   {
     title: "¿Sois suficientes para mi acto?",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan non nibh sed maximus. Etiam venenatis lacus eget sapien mollis vulputate. Maecenas auctor at massa eget tristique. Praesent venenatis a odio a hendrerit. Phasellus in imperdiet dui. Sed ut ultrices justo, iaculis commodo lacus. Mauris tempor suscipit elit et volutpat. Etiam eu erat auctor, tristique tellus et, elementum nisi. Vivamus faucibus dolor ut sagittis mattis. Curabitur vel mattis magna, in blandit lectus. Vivamus quis auctor metus. Suspendisse vel egestas libero. ",
+      "Esa es un gran pregunta, y aseguramos que estará contento con el grupo. Si tienes dudas puedes ponerte en contacto para que analicemos tu situación.",
   },
   {
     title: "¿Qué podeis tocar?",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan non nibh sed maximus. Etiam venenatis lacus eget sapien mollis vulputate. Maecenas auctor at massa eget tristique. Praesent venenatis a odio a hendrerit. Phasellus in imperdiet dui. Sed ut ultrices justo, iaculis commodo lacus. Mauris tempor suscipit elit et volutpat. Etiam eu erat auctor, tristique tellus et, elementum nisi. Vivamus faucibus dolor ut sagittis mattis. Curabitur vel mattis magna, in blandit lectus. Vivamus quis auctor metus. Suspendisse vel egestas libero. ",
+      "Tenemos un amplio abanico en nuestro repositorio, que engloban pasodobles, canciones modernas, mix de caciones conocidas como canciones de charanga típica. También adaptadas a todos los públicos 😋.",
   },
 ];
 const items = questions.map((question) => {

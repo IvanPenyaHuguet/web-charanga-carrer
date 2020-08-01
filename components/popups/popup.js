@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { ResponsiveContext } from "../../lib/context";
+import Cross from "./../icons/cross";
 
-const popup = ({ title, onButtonClick, children, buttonName = "Aceptar" }) => {
+const popup = ({ children, onClick }) => {
   const { resolution } = useContext(ResponsiveContext);
 
   const responsiveCSS = () => {
@@ -18,7 +19,15 @@ const popup = ({ title, onButtonClick, children, buttonName = "Aceptar" }) => {
 
   return (
     <div className="popup">
-      <div className={responsiveCSS()}>{children}</div>
+      <div className={responsiveCSS()}>
+        <div
+          className="closing-cross text-black fill-current"
+          onClick={() => onClick()}
+        >
+          <Cross />
+        </div>
+        {children}
+      </div>
     </div>
   );
 };

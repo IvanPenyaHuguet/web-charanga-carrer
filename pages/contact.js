@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ImageBanner from "../components/home/ImageBanner";
 import Form from "../components/form/contactForm";
 import PrivacyPopup from "../components/popups/privacyPopup";
 
@@ -14,7 +13,6 @@ const contact = () => {
       {showPrivacy ? (
         <PrivacyPopup onShowPrivacy={() => onShowPrivacy()} />
       ) : null}
-      <ImageBanner />
       <Form onShowPrivacy={() => onShowPrivacy()} />
     </>
   );

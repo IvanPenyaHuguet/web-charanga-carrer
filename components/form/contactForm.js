@@ -1,11 +1,12 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import { Formik, Form, ErrorMessage, Field } from "formik";
+import getIP from "./../../lib/getIp";
 import { useRouter } from "next/router";
 import Container from "../layouts/container";
 import LogoCorreo from "./../icons/correo";
 import InputText from "./inputText";
-import user_id from "./../../personal_info";
+import { user_id } from "./../../personal_info";
 import validateForm from "../../lib/validateForm";
 import createAlert from "./../layouts/alert";
 
@@ -48,8 +49,9 @@ const form = ({ onShowPrivacy }) => {
           };
           const service_id = "default_service";
           const template_id = "template_bICmePU9";
+          const user_ip = getIP();
           return emailjs
-            .send(service_id, template_id, template_params, user_id)
+            .send(service_id, template_id, template_params, user_id, user_ip)
             .then(() => {
               setSubmitted(true);
             })
@@ -109,12 +111,12 @@ const form = ({ onShowPrivacy }) => {
               <div className="space-x-2">
                 <Field type="checkbox" name="terms" id="terms" />
                 <label htmlFor="terms">
-                  He leído y aceptado las{" "}
+                  He leído y aceptado la{" "}
                   <div
                     className="italic underline text-advise cursor-pointer inline"
                     onClick={() => onShowPrivacy()}
                   >
-                    condiciones de privacidad
+                    política de privacidad
                   </div>
                   .
                 </label>

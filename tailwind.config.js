@@ -16,8 +16,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        logo1: "#b0dde4",
-        logo1d: "red",
+        //logo1: "#b0dde4",
+        logo1: "#abc2e8",
+        logo1d: "white",
         //logo1d: "#286fb4",
         //logo2: "#009cad",
         logo2: "white",
@@ -34,10 +35,8 @@ module.exports = {
         overlay: "#00000028",
         unselected: "#eeeeee",
         alert: {
-          info: "#7472ff",
-          warn: "#f8ec81",
           error: "#ff7272",
-          success: "#b0fc8f",
+          success: "#b5ead7",
         },
       },
     },

@@ -1,6 +1,8 @@
 import Slider from "react-slick";
 import Container from "./../layouts/container";
-import Logo from "./../../images/logo.jpg";
+import Imagen1 from "./../../images/principal.jpeg";
+import Imagen2 from "./../../images/walking.jpeg";
+import Imagen3 from "./../../images/wall.jpeg";
 import NextArrow from "./nextArrow";
 import PrevArrow from "./prevArrow";
 
@@ -10,7 +12,7 @@ class carousel extends React.Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 0,
       centerMode: true,
@@ -27,14 +29,14 @@ class carousel extends React.Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
           },
         },
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: false,
           },
@@ -51,24 +53,24 @@ class carousel extends React.Component {
     };
     return (
       <Container cassName="" size="lg">
-        <Slider {...settings} className="w-1/2 mx-auto">
+        <Slider {...settings} className="mx-auto">
           <div>
-            <img src={Logo} alt="Wow" className="h-20" />
+            <img src={Imagen1} alt="Charanga en el sol." className="px-2" />
           </div>
           <div>
-            <img src={Logo} alt="Wow" className="h-20" />
+            <img src={Imagen2} alt="Charanga en la calle." className="px-2" />
           </div>
           <div>
-            <img src={Logo} alt="Wow" className="h-20" />
+            <img src={Imagen3} alt="Imagen en el muro." className="px-2" />
           </div>
           <div>
-            <img src={Logo} alt="Wow" className="h-20" />
+            <img src={Imagen1} alt="Charanga en el sol." className="px-2" />
           </div>
           <div>
-            <img src={Logo} alt="Wow" className="h-20" />
+            <img src={Imagen2} alt="Charanga en la calle." className="px-2" />
           </div>
           <div>
-            <img src={Logo} alt="Wow" className="h-20" />
+            <img src={Imagen3} alt="Imagen en el muro." className="px-2" />
           </div>
         </Slider>
       </Container>
