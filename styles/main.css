@@ -1,13 +1,19 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 html {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);  
 }
+/*body {
+  font-family: 'Roboto', sans-serif;
+}*/
 .h1-font {
-  font-family: var(--main-font-family);
+  font-family: 'Satisfy', cursive;
+}
+.h2-font {
+  font-family: 'DM Sans', sans-serif;
 }
 @keyframes fadeInLeft {
   from {

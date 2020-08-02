@@ -113,3 +113,6 @@
 	transform: translate3d(0, -50%, 0);
 	transition-delay: 0s;
 }
+.button-new:focus {
+	outline: none;
+}

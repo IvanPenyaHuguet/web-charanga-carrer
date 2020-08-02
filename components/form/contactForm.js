@@ -9,6 +9,7 @@ import InputText from "./inputText";
 import { user_id } from "./../../personal_info";
 import validateForm from "../../lib/validateForm";
 import createAlert from "./../layouts/alert";
+import InputTextArea from "./inputTextArea";
 
 const loader = (isSubmitting) => {
   if (isSubmitting == true) {
@@ -64,50 +65,72 @@ const form = ({ onShowPrivacy }) => {
             );
         }}
       >
-        {({ errors, handleChange, isSubmitting }) => (
+        {({ errors, handleChange, isSubmitting, touched }) => (
           <Form className="flex justify-center shadow-md rounded-lg mx-auto px-8 py-4 border-opacity-100 border-logo3 border-2 w-full lg:w-3/5 text-logo3 fadeInLeft">
-            <div className="flex justify-around flex-col align-center content-center">
-              <h2 className="text-center text-2xl">Contáctanos!</h2>
+            <div className="flex justify-around flex-col align-center content-center space-y-1">
+              <h2 className="text-center text-3xl h2-font font-medium">
+                ¡Contáctanos!
+              </h2>
               <InputText
                 name="name"
-                label="Nombre"
+                label="Nombre *"
                 onChange={handleChange}
                 placeholder="Nombre"
-                error={errors.name ? "error-input" : ""}
+                error={
+                  errors.name && touched.name ? "error-input" : "no-error-input"
+                }
               />
-              <ErrorMessage className="" name="name" component="small" />
+              <ErrorMessage
+                className=""
+                name="name"
+                component="small"
+                className="form-error-message"
+              />
               <InputText
                 name="phone"
                 label="Teléfono"
                 onChange={handleChange}
                 placeholder="Teléfono"
-                error={errors.phone ? "error-input" : ""}
+                error={
+                  errors.phone && touched.phone
+                    ? "error-input"
+                    : "no-error-input"
+                }
               />
-              <ErrorMessage name="phone" component="small" />
+              <ErrorMessage
+                name="phone"
+                component="small"
+                className="form-error-message"
+              />
               <InputText
                 name="email"
-                label="Correo electrónico"
+                label="Correo electrónico *"
                 onChange={handleChange}
                 placeholder="E-Mail"
-                error={errors.email ? "error-input" : ""}
+                error={
+                  errors.email && touched.email
+                    ? "error-input"
+                    : "no-error-input"
+                }
               />
-              <ErrorMessage name="email" component="small" />
-              <div className="flex flex-wrap justify-bewtween content-center flex-row lg:space-x-8 space-x-2">
-                <label htmlFor="message" className="">
-                  Escribe tu mensaje:
-                </label>
-                <Field
-                  component="textarea"
-                  name="message"
-                  id="message"
-                  rows="2"
-                  placeholder="Pregúntanos..."
-                  className={`border-solid resize-none border-logo3 border-2 rounded-lg border-opacity-50 w-full focus:border-4 focus:border-opacity-100 focus:shadow-outline h-32 ${
-                    errors.message ? "error-input" : ""
-                  }`}
-                />
-              </div>
-              <ErrorMessage name="message" component="small" />
+              <ErrorMessage
+                name="email"
+                component="small"
+                className="form-error-message"
+              />
+              <InputTextArea
+                onChange={handleChange}
+                error={
+                  errors.message && touched.message
+                    ? "error-input"
+                    : "no-error-input"
+                }
+              />
+              <ErrorMessage
+                name="message"
+                component="small"
+                className="form-error-message"
+              />
               <div className="space-x-2">
                 <Field type="checkbox" name="terms" id="terms" />
                 <label htmlFor="terms">
@@ -121,7 +144,11 @@ const form = ({ onShowPrivacy }) => {
                   .
                 </label>
               </div>
-              <ErrorMessage name="terms" component="small" />
+              <ErrorMessage
+                name="terms"
+                component="small"
+                className="form-error-message"
+              />
               <button
                 className="button-new button--itzel mx-auto"
                 type="submit"

@@ -4,26 +4,29 @@
 * ----------------------------------------------
 **/
 .accordion {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
+    
 }
 
 .accordion__item + .accordion__item {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
 }
 
 .accordion__button {
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
+    border-bottom: 1px solid #00878a;    
+    @apply font-bold;
+    @apply text-lg;
 }
 
 .accordion__button:hover {
-    background-color: #ddd;
+    background-color: #fff;
+    color: #00878a;   
 }
 
 .accordion__button:before {

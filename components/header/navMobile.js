@@ -3,12 +3,12 @@ import links from "../../lib/linksNav";
 import { useState, useEffect, useRef } from "react";
 //import Menu from 'react-burger-menu/lib/menus/slide';
 import Menu from "react-burger-menu/lib/menus/stack";
-//import { stack as Menu } from 'react-burger-menu';
-//import img from "../../images/logo.png";
 import Logo from "../icons/iconDesktop";
 
 const NavMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mouseEnterIcon, setMouseEnterIcon] = useState(false);
+
   const handleStateChange = (state) => {
     setMenuOpen(state.isOpen);
   };
@@ -38,9 +38,18 @@ const NavMobile = () => {
         onStateChange={(state) => handleStateChange(state)}
       >
         <Link href="/">
-          <a className="px-3 py-2">
-            <Logo className="mx-auto my-4" />
-            <h3 className="mx-auto text-center text-xl font-bold">
+          <a
+            className="px-3 py-2 hover:text-logo4"
+            onMouseEnter={() => setMouseEnterIcon(true)}
+            onMouseLeave={() => setMouseEnterIcon(false)}
+          >
+            <div className="mx-auto w-1/2">
+              <Logo
+                className="mx-auto my-4"
+                fill={mouseEnterIcon ? "#ffa12e" : "#fff"}
+              />
+            </div>
+            <h3 className="mx-auto text-center text-2xl h1-font">
               Charanga al carrer
             </h3>
             <hr />
@@ -54,7 +63,7 @@ const NavMobile = () => {
 const getLinks = () => {
   return links.map((i, index) => (
     <Link key={index} href={i.href}>
-      <a className="px-3 py-2" alt={i.text}>
+      <a className="px-3 py-2 font-bold hover:text-logo4" alt={i.text}>
         {i.text}
       </a>
     </Link>

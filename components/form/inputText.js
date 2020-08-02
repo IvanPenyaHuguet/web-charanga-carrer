@@ -1,23 +1,24 @@
-const inputText = ({
-  label,
-  name,
-  onChange,
-  placeholder,
-  error = "",
-  height = "",
-}) => {
+import { useState } from "react";
+
+const inputText = ({ label, name, onChange, placeholder, error = "" }) => {
+  const [isFocus, setIsFocus] = useState(false);
+
   return (
-    <div className="flex flex-wrap justify-bewtween content-center flex-row lg:space-x-8 space-x-2">
-      <label htmlFor={name} className="">
-        {label}:
+    <div className="flex flex-wrap justify-bewtween content-center flex-row space-x-2">
+      <label
+        htmlFor={name}
+        className={isFocus ? "lost-form-label" : "form-label"}
+      >
+        {label}
       </label>
       <input
         name={name}
         id={name}
         type="text"
-        className={`border-solid border-logo3 border-2 rounded-lg border-opacity-50 w-full focus:border-4 focus:border-opacity-100 focus:shadow-outline ${error} ${height}`}
+        className={`normal-input ${error} floating-label`}
         onChange={onChange}
-        placeholder={placeholder}
+        placeholder={isFocus ? placeholder : ""}
+        onFocus={() => setIsFocus(true)}
       />
     </div>
   );

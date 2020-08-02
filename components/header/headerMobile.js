@@ -9,12 +9,14 @@ import Link from "next/link";
  */
 const HeaderMobile = () => {
   return (
-    <Container className="flex flex-row-sb-st h-16 items-center justify-around bg-logo1 p-5 z-50">
-      <div className="flex flex-row items-center justify-between space-x-5 text-logo2">
-        <Logo />
-        <h1 className="font-semibold text-3xl">
+    <Container className="flex flex-row h-16 items-center justify-around bg-logo1 p-1 z-50">
+      <div className="flex flex-row items-center justify-between space-x-2 text-logo2">
+        <div className="pt-2">
+          <Logo width="80" height="80" />
+        </div>
+        <h1 className="font-semibold text-3xl h1-font">
           <Link href="/">
-            <a>Charanga al movil</a>
+            <a>Charanga Al Carrer</a>
           </Link>
         </h1>
       </div>

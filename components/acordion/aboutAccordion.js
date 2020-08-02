@@ -18,9 +18,9 @@ const questions = [
       "Esa es un gran pregunta, y aseguramos que estará contento con el grupo. Si tienes dudas puedes ponerte en contacto para que analicemos tu situación.",
   },
   {
-    title: "¿Qué podeis tocar?",
+    title: "¿Cuál es vuestro repertorio musical?",
     message:
-      "Tenemos un amplio abanico en nuestro repositorio, que engloban pasodobles, canciones modernas, mix de caciones conocidas como canciones de charanga típica. También adaptadas a todos los públicos 😋.",
+      "Tenemos un amplio abanico en nuestro repertorio, que engloban pasodobles, canciones modernas, mix de caciones conocidas como canciones de charanga típica. También adaptadas a todos los públicos 😋.",
   },
 ];
 const items = questions.map((question) => {

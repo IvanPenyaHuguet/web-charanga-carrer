@@ -9,7 +9,6 @@ import PrevArrow from "./prevArrow";
 class carousel extends React.Component {
   render() {
     const settings = {
-      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
@@ -23,7 +22,9 @@ class carousel extends React.Component {
       pauseOnHover: true,
       autoplaySpeed: 3000,
       arrows: true,
-      nextArrow: <NextArrow />,
+      nextArrow: (
+        <NextArrow className="transition duration-500 ease-in-out transform hover:translate-x-2 hover:scale-125" />
+      ),
       prevArrow: <PrevArrow />,
       responsive: [
         {

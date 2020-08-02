@@ -5,6 +5,7 @@ export default ({ width = "30", height = "30" }) => (
     viewBox="0 0 512.002 512.002"
     width={width}
     width={height}
+    fill="#00878a"
   >
     <g>
       <g>

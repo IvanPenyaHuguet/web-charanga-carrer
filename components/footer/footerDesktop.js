@@ -5,7 +5,9 @@ import Container from "../layouts/container";
 const footerDesktop = () => {
   return (
     <Container className="flex bg-logo1 justify-around self-center content-center items-center text-logo1d">
-      <span className="">Síguenos en nuestras redes: </span>
+      <span className="h1-font text-xl font-medium tracking-wide">
+        Síguenos en nuestras redes:{" "}
+      </span>
       {getLinks()}
     </Container>
   );
@@ -18,7 +20,9 @@ const getLinks = () => {
         alt={i.text}
       >
         <i className="fill-current">{i.icon}</i>
-        <span>{i.text}</span>
+        <span className="h1-font text-xl font-medium tracking-wide">
+          {i.text}
+        </span>
       </a>
     </Link>
   ));

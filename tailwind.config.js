@@ -23,6 +23,7 @@ module.exports = {
         //logo2: "#009cad",
         logo2: "white",
         logo3: "#00878a",
+        logo4: "#ffa12e",
         cta: "#6421e4",
         lightgray: "#a8a8a8",
         darkgray: "#707070",
