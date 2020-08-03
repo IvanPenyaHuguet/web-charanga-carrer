@@ -1,4 +1,4 @@
-import ImageBanner from "../components/home/ImageBanner";
+import ImageBanner from "../components/home/imageBanner";
 import Container from "./../components/layouts/container";
 import TrumpetIcon from "./../components/icons/trumpet";
 import DrumIcon from "./../components/icons/tambor";
