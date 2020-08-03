@@ -4,7 +4,7 @@
   box-sizing: border-box;  
 }
 html {
-  background-color: var(--main-bg-color);  
+  background-color: white;  
 }
 /*body {
   font-family: 'Roboto', sans-serif;
