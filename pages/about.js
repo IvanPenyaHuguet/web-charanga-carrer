@@ -1,18 +1,9 @@
 import Carousel from "./../components/carousel/aboutCarousel";
 import Accordion from "./../components/acordion/aboutAccordion";
 import Container from "./../components/layouts/container";
-import { useState } from "react";
-import PrivacyPopup from "../components/popups/privacyPopup";
+import PoliticsFooter from "./../components/footer/politics";
 
 const about = () => {
-  const [showPrivacy, setShowPrivacy] = useState(false);
-  const onShowPrivacy = () => {
-    setShowPrivacy(!showPrivacy);
-  };
-  const [showCookies, setShowCookies] = useState(false);
-  const onShowCookies = () => {
-    setShowCookies(!showCookies);
-  };
   return (
     <Container className="lg:w-4/5 mx-auto w-11/12">
       <article>
@@ -33,28 +24,7 @@ const about = () => {
         <section className="py-6">
           <Accordion />
         </section>
-        <section className="pb-16">
-          {showPrivacy ? (
-            <PrivacyPopup onShowPrivacy={() => onShowPrivacy()} />
-          ) : null}
-          <span>
-            Consulte además nuestra{" "}
-            <div
-              className="italic underline text-advise cursor-pointer inline"
-              onClick={() => onShowPrivacy()}
-            >
-              política de privacidad
-            </div>{" "}
-            y nuestra{" "}
-            <div
-              className="italic underline text-advise cursor-pointer inline"
-              onClick={() => {}}
-            >
-              política de cookies
-            </div>
-            .
-          </span>
-        </section>
+        <PoliticsFooter />
       </article>
     </Container>
   );
