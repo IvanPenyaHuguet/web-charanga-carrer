@@ -15,7 +15,7 @@ const about = () => {
           <p>
             Somos un pequeño grupo charanguero de músicos de estudiantes del
             conservatorio Alto Palancia, que hemos creado este grupo de charanga
-            con tal de disfruta y hacer que otros disfruten con nuestra música
+            con tal de disfrutar y hacer que otros disfruten con nuestra música
             mientras terminamos la formación de músicos profesionales. Ahora
             bien, contamos con experiencia tocando en grupos reducidos y
             animando fiestas de todo tipo, ya sean fallas como fiestas taurinas.
