@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Field } from "formik";
 
+/**
+ * Función que devuelve el input de textarea para el formulario, donde se escribe al consulta
+ * @param {function} onChange Que debe suceder cuando sucede un cambio en el texto
+ *  @param {string} error Las clases de css que deben cargarse dependiendo si tiene error o no
+ */
 const inputTextArea = ({ onChange, error = "" }) => {
   const [isFocus, setIsFocus] = useState(false);
 

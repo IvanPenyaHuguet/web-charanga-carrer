@@ -11,12 +11,21 @@ import validateForm from "../../lib/validateForm";
 import createAlert from "./../layouts/alert";
 import InputTextArea from "./inputTextArea";
 
+/**
+ * Función para cargar un loader cuando se envía el formulario
+ * @param {boolean} isSubmitting Si está enviando el formulario es true
+ */
+
 const loader = (isSubmitting) => {
   if (isSubmitting == true) {
     return <div className="spinner"></div>;
   }
 };
-
+/**
+ * Función del formulario
+ * @param {function} param0 Muestra los términos de privacidad
+ * @todo Animación de los input cuando pierden el focus para que los label vuelvan al sitio original
+ */
 const form = ({ onShowPrivacy }) => {
   const [submitted, setSubmitted] = useState(false);
   const router = useRouter();
@@ -158,7 +167,7 @@ const form = ({ onShowPrivacy }) => {
                 <i className="button__icon icon-new fill-current">
                   <LogoCorreo />
                 </i>
-                <span>Envía</span>
+                <span>Enviar</span>
               </button>
               <span className="">* Estos campos son obligatorios.</span>
             </div>
@@ -169,16 +178,3 @@ const form = ({ onShowPrivacy }) => {
   );
 };
 export default form;
-/*
-                <input
-                  name="message"
-                  id="message"
-                  type="textarea"
-                  rows="20"
-                  cols="50"
-                  className={`border-solid border-logo3 border-2 rounded-lg border-opacity-50 w-full focus:border-4 focus:border-opacity-100 focus:shadow-outline h-32 ${
-                    errors.message ? "error-input" : ""
-                  }`}
-                  onChange={handleChange}
-                  placeholder="Pregúntanos..."
-                />*/
