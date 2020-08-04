@@ -27,7 +27,7 @@ const HeaderDesktop = () => {
             />
           </div>
           <h1
-            className={`font-semibold text-4xl md:text-3xl h1-font tracking-wider "+ ${
+            className={`font-semibold text-4xl md:text-3xl sm:text-2xl xs:text-xl h1-font tracking-wider "+ ${
               mouseEnterIcon ? "text-logo4" : ""
             }`}
           >
