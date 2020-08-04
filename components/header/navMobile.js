@@ -6,7 +6,7 @@ import Menu from "react-burger-menu/lib/menus/stack";
 import Logo from "../icons/iconDesktop";
 
 /**
- * @todo Cerrar al clicar en un enlace
+ *
  */
 const NavMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
