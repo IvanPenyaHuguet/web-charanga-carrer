@@ -6,7 +6,7 @@ import PoliticsFooter from "../components/footer/politics";
 
 function Home() {
   return (
-    <>
+    <div className="text-lg font-medium">
       <ImageBanner />
       <Container className="mx-auto lg:w-4/5 w-full px-6">
         <section className="flex flex-col">
@@ -38,7 +38,7 @@ function Home() {
       </Container>
       <section className="bg-lightgray mt-6">
         <Container className="mx-auto lg:w-4/5 w-full px-6 pt-6 pb-12">
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-justify">
             <h3 className="text-logo4 text-2xl italic font-semibold h1-font tracking-widest">
               ¿Que aportamos?
             </h3>
@@ -85,7 +85,7 @@ function Home() {
       </Container>
       <section className="bg-lightgray mt-6">
         <Container className="mx-auto lg:w-4/5 w-full px-6 pt-6 pb-12">
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-justify">
             <h3 className="text-logo4 text-2xl italic font-semibold h1-font tracking-widest">
               Nuestro sello
             </h3>
@@ -101,7 +101,7 @@ function Home() {
         </Container>
       </section>
       <PoliticsFooter className="lg:pl-48 p-6" />
-    </>
+    </div>
   );
 }
 export default Home;
