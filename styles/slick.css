@@ -4,7 +4,7 @@
     position: relative;
 
     display: block;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -89,6 +89,7 @@
 .slick-slide img
 {
     display: block;
+    outline: none;
 }
 .slick-slide.slick-loading img
 {

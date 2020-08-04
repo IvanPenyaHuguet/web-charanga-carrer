@@ -53,7 +53,7 @@ class carousel extends React.Component {
       ],
     };
     return (
-      <Container cassName="" size="lg">
+      <Container className="px-2 mx-auto">
         <Slider {...settings} className="mx-auto">
           <div>
             <img src={Imagen1} alt="Charanga en el sol." className="px-2" />

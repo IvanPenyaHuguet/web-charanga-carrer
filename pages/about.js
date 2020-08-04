@@ -8,7 +8,7 @@ const about = () => {
     <Container className="lg:w-4/5 mx-auto w-11/12">
       <article>
         <h2 className="text-center text-4xl text-logo3 font-bold py-6 h2-font">
-          ¿Qué podemos decir sobre nosotros?
+          Nuestro grupo
         </h2>
         <Carousel />
         <section className="text-justify pt-6 text-lg font-medium">
