@@ -2,6 +2,10 @@ import Link from "next/link";
 import SocialNetworks from "../../lib/socialNetworks";
 import Container from "../layouts/container";
 
+/**
+ * @todo Poner naranja en hover
+ */
+
 const footerDesktop = () => {
   return (
     <Container className="flex bg-logo1 justify-around self-center content-center items-center text-logo1d">

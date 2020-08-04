@@ -22,7 +22,7 @@ function Home() {
               de música, si estás aquí es porque te interesa este grupo reducido
               de músicos y estás en el lugar adecuado.
             </p>
-            <div className="col-start-1 col-span-2 flex flex-no-wrap items-center ml-6">
+            <div className="col-start-1 col-span-2 flex flex-no-wrap items-center lg:ml-6 md:ml-4">
               <i className="w-1/5 mr-6">
                 <TrumpetIcon height="100" width="100" fill="#970b7d" />
               </i>
@@ -69,7 +69,7 @@ function Home() {
               festiva tocada normalmente en eventos taurinos, fiestas de
               pueblos, despedidas de soltero/a...
             </p>
-            <div className="lg:col-start-2 col-span-2 flex flex-no-wrap items-center ml-6">
+            <div className="lg:col-start-2 col-span-2 flex flex-no-wrap items-center lg:ml-6 md:ml-4">
               <i className="w-1/5 mr-6">
                 <DrumIcon height="100" width="100" fill="#9ED44E" />
               </i>
