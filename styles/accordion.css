@@ -22,6 +22,7 @@
     border-bottom: 1px solid #00878a;    
     @apply font-bold;
     @apply text-lg;
+    outline: none;
 }
 
 .accordion__button:hover {

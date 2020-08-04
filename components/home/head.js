@@ -1,5 +1,11 @@
 import Head from "next/head";
 
+/**
+ *
+ * @param {*} param0
+ * @todo Poner etiquetas SEO y faltantes
+ */
+
 function MyHead({ children, title = "Charanga al carrer" }) {
   return (
     <>
