@@ -5,8 +5,7 @@ import Logo from "../icons/iconDesktop";
 import Link from "next/link";
 
 /**
- * @todo
- * Header for desktop versions (md,lg)
+ *
  * @returns {React.Component} Header desktop
  */
 const HeaderDesktop = () => {
