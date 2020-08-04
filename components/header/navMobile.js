@@ -15,6 +15,9 @@ const NavMobile = () => {
   const handleStateChange = (state) => {
     setMenuOpen(state.isOpen);
   };
+  const onLinkClick = () => {
+    setMenuOpen(false);
+  };
   const ref = useRef();
   useEffect(() => {
     const onBodyClick = (event) => {
@@ -45,6 +48,7 @@ const NavMobile = () => {
             className="px-3 py-2 hover:text-logo4"
             onMouseEnter={() => setMouseEnterIcon(true)}
             onMouseLeave={() => setMouseEnterIcon(false)}
+            onClick={() => onLinkClick()}
           >
             <div className="mx-auto w-1/2">
               <Logo
@@ -58,15 +62,19 @@ const NavMobile = () => {
             <hr />
           </a>
         </Link>
-        {getLinks()}
+        {getLinks(onLinkClick)}
       </Menu>
     </div>
   );
 };
-const getLinks = () => {
+const getLinks = (onLinkClick) => {
   return links.map((i, index) => (
     <Link key={index} href={i.href}>
-      <a className="px-3 py-2 font-bold hover:text-logo4" alt={i.text}>
+      <a
+        className="px-3 py-2 font-bold hover:text-logo4"
+        alt={i.text}
+        onClick={() => onLinkClick()}
+      >
         {i.text}
       </a>
     </Link>
