@@ -30,7 +30,7 @@ function Home() {
                 Aunque este tipo de asociaciones musicales gozan de gran
                 tradición en España pero su nombre depende de la zona en la que
                 se haga referencia. Generalmente agrupaciones de músicos jóvenes
-                que buscan ganar algún dinero extra.
+                que buscan abrirse un camino en el mundo de la música.
               </p>
             </div>
           </div>
@@ -44,10 +44,9 @@ function Home() {
             </h3>
             <p>
               Somos de la comunidad valenciana, un lugar con una alta tradición
-              y un alto nivel musical, destacamos por ser unos muy jóvenes
-              músicos profesionales con gran capacidad de adaptación para
-              cualquier tipo de acto y siempre dotándolo de gran calidad
-              musical.
+              y un alto nivel musical, destacamos por ser unos jóvenes músicos
+              profesionales con gran capacidad de adaptación para cualquier tipo
+              de acto y siempre dotándolo de gran calidad musical.
             </p>
           </div>
         </Container>
@@ -65,9 +64,9 @@ function Home() {
               Generalmente las charangas tocan música folclórica ,canciones
               populares de la zona y arreglos de música moderna, habitualmente
               estas canciones están cargadas de humor y pueden utilizan un
-              lenguaje grosero. Esto es debido a que suele ser una música
-              festiva tocada normalmente en eventos taurinos, fiestas de
-              pueblos, despedidas de soltero/a...
+              lenguaje divertido y despreocupado. Esto es debido a que suele ser
+              una música festiva tocada normalmente en eventos taurinos, fiestas
+              de pueblos, despedidas de soltero/a...
             </p>
             <div className="lg:col-start-2 col-span-2 flex flex-no-wrap items-center lg:ml-6 md:ml-4">
               <i className="w-1/5 mr-6">
@@ -92,10 +91,10 @@ function Home() {
             <p>
               Apostamos por tener un grupo charanguero muy versátil con una
               instrumentación más variada que los grupos tradicionales. Siendo
-              capaces de tocar en una gran diversidad de actos y modificando la
+              capaces de tocar en una gran diversidad de actos y adaptando la
               plantilla a las necesidades. De la misma forma, intentamos innovar
               en los repertorios musicales tocando canciones modernas a la vez
-              que readaptando la música popular a los tiempos actuales.
+              que versionamos la música popular a los tiempos actuales.
             </p>
           </div>
         </Container>
