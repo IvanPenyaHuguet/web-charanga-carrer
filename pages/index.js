@@ -28,9 +28,9 @@ function Home() {
               </i>
               <p className="ml-6">
                 Aunque este tipo de asociaciones musicales gozan de gran
-                tradición en España pero su nombre depende de la zona en la que
-                se haga referencia. Generalmente agrupaciones de músicos jóvenes
-                que buscan abrirse un camino en el mundo de la música.
+                tradición en España, su nombre depende de la zona en la que se
+                haga referencia. Generalmente son agrupaciones de músicos
+                jóvenes que buscan abrirse un camino en el mundo de la música.
               </p>
             </div>
           </div>
