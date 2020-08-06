@@ -1,6 +1,6 @@
 import Container from "./../layouts/container";
 
-const cookieBanner = ({ onAcceptClick, onDeclineClick, onCookiesClick }) => {
+const cookieBanner = ({ onAcceptClick, onCookiesClick }) => {
   return (
     <div className="cookie-banner">
       <Container className="flex justify-between content-center mx-8">

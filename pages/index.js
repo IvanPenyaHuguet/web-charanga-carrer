@@ -43,7 +43,7 @@ function Home() {
               ¿Que aportamos?
             </h3>
             <p>
-              Somos de la comunidad valenciana, un lugar con una alta tradición
+              Somos de la Comunidad Valenciana, un lugar con una alta tradición
               y un alto nivel musical, destacamos por ser unos jóvenes músicos
               profesionales con gran capacidad de adaptación para cualquier tipo
               de acto y siempre dotándolo de gran calidad musical.

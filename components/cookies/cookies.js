@@ -45,7 +45,6 @@ function Cookies({ onCookiesClick, showCookies }) {
       {cookied == null ? (
         <CookieBanner
           onAcceptClick={onAcceptClick}
-          onDeclineClick={onDeclineClick}
           onCookiesClick={onCookiesClick}
         />
       ) : null}
