@@ -11,7 +11,7 @@ const HeaderMobile = () => {
   return (
     <Container className="flex flex-row h-16 items-center xs:justify-start justify-between bg-logo1 z-50">
       <Link href="/">
-        <a className="flex flex-row flex-no-wrap items-center justify-between mr-20 xm:space-x-4 text-logo2 ml-4">
+        <a className="flex flex-row flex-no-wrap items-center justify-between mr-32 xm:space-x-4 text-logo2 ml-4">
           <div className="pt-2">
             <Logo width="60" height="60" />
           </div>

@@ -18,12 +18,12 @@ const cookieBanner = ({ onAcceptClick, onDeclineClick, onCookiesClick }) => {
         <div className="flex flex-wrap justify-between w-2/6 lg:justify-end lg:space-x-4 content-center ml-6">
           <button
             onClick={() => onAcceptClick()}
-            className="border-2 border-solid border-logo4 text-logo4 rounded-lg px-6 w-32 my-1 font-bold"
+            className="border-2 border-solid border-logo4 text-logo4 rounded-lg w-32 my-1 font-bold"
           >
             Aceptar
           </button>
           <button
-            className="border-2 border-solid border-black text-black rounded-lg px-6 w-32 my-1"
+            className="border-2 border-solid border-black text-black rounded-lg w-32 my-1"
             onClick={() => onCookiesClick()}
           >
             Configurar
