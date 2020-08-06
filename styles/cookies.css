@@ -1,0 +1,11 @@
+.cookie-banner {
+    position: fixed;
+    z-index: 1000;
+    bottom: 3.2rem;
+    width: 100%;
+    background-color: #faefff;
+    min-height: 2rem;
+    left: 0;
+    @apply text-base;
+    @apply font-normal;
+}

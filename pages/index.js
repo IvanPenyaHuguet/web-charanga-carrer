@@ -99,7 +99,7 @@ function Home() {
           </div>
         </Container>
       </section>
-      <PoliticsFooter className="lg:pl-48 p-6" />
+      <PoliticsFooter className="lg:pl-48 p-6 font-normal text-base" />
     </div>
   );
 }
